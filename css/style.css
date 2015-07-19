@@ -797,6 +797,11 @@
 		position: relative;
 		z-index: 1;
 	}
+
+		#logo img
+		{
+			height: 200px;
+		}
 	
 		#logo a
 		{
