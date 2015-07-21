@@ -23,6 +23,12 @@
 		</noscript>
 		<link rel="icon" href="images/comfred.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="images/comfred.ico" type="image/x-icon"/>
+		<!-- Función. Para los sitios que continúan en desarrollo y su página web o applicación móvil aún no se ha publicado. -->
+		<script>
+			function enDesarrollo(){
+				alert("El recurso aún no ha sido publicado por la organización.");
+			}
+		</script>
 	</head>
 	<body class="homepage">
 
@@ -36,7 +42,7 @@
 						<li class="active"><a href="#comfred">Inicio</a></li>
 						<li><a href="#servicios">Servicios</a></li>
 						<li><a href="#portafolio">Portafolio</a></li>
-						<li><a href="#acerca-de">Acerca de</a></li>
+						<li><a href="#acerca-de">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -44,7 +50,7 @@
 				
 				<!-- Logo -->
 				<div id="logo">
-					<img src="images/comfred.png" alt="Comfred">
+					<span class="tag"><img src="images/comfred.png"></span>
 					<h1><a href="#comfred">Comfred</a></h1>
 					<span class="tag">Desarrollo de Software</span>
 				</div>
@@ -56,7 +62,7 @@
 		<div id="featured">
 			<div class="container">
 				<header>
-					<h2>Nuestro objetivo</h2>
+					<h2 style="color:red; text-decorator: underline;">¡Sitio en desarrollo!</h2>
 				</header>
 				<p>Colaborar en instituciones y programas donde se requiera el uso de tecnologías, para poder poner en práctica la experiencia y conocimientos adquiridos, junto con la constante promoción de tecnologías de código abierto, participación social, innovación y uso apropiado de los recursos naturales. Lo anterior para dar solución a problemas de carácter educativo y social.</p>
 				<hr />
@@ -88,39 +94,117 @@
 	<section id="portafolio">
 		<div id="main">
 			<div id="content" class="container">
-
+				<header>
+					<h2 style="font-size: 3em; padding-bottom: 40px;">Nuestros más recientes proyectos</h2>
+				</header>
 				<div class="row">
-					<section class="6u" id="worldwide">
-						<a href="#" class="image full"><img src="images/pic01.jpg" alt=""></a>
-						<header>
-							<h2>Mauris vulputate dolor</h2>
-						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-					</section>				
 					<section class="6u">
-						<a href="#" class="image full"><img src="images/pic02.jpg" alt=""></a>
+						<a class="image full"><img src="images/pic01.jpg"></a>
+						<!-- CQH Electoral Colectivo -->
 						<header>
-							<h2>Mauris vulputate dolor</h2>
+							<h2>CHQ Electoral Colectivo</h2>
 						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.chequeado.com" target="_blank">Chequeado</a></td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Prototipo. Sitio de <a href="https://es.wikipedia.org/wiki/Verificaci%C3%B3n_de_hechos" style="text-decoration: none; color:#777777"><em>fact checking</em></a> elaborado como parte de las actividades del <a href="http://www.ciudadania20.org/labicmx/" target="_blank">Laboratorio Iberoamericano de Innovación Ciudadana</a>, México.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Wordpress</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">Noviembre, 2014</td>
+							</tr>
+						</table>
+						<a href="http://www.chqelectoral.com" target="_blank" class="button button-style1">Ver sitio</a>
+					</section>	
+					<section class="6u">
+						<a class="image full"><img src="images/projects/cimatcert.png"></a>
+						<!-- CIMAT CERT -->
+						<header>
+							<h2>CIMAT CERT</h2>
+						</header>
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.ingsoft.mx/" target="_blank">CIMAT</a>: Centro de Investigación en Matemáticas, Unidad Zacatecas</td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Prototipo. Sitio relacionado con seguridad informática y apoyo a las actividades de un <a href="https://es.wikipedia.org/wiki/Equipo_de_Respuesta_ante_Emergencias_Inform%C3%A1ticas" style="text-decoration: none; color:#777777;">CERT</a>.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Wordpress</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">Junio, 2015</td>
+							</tr>
+						</table>
+						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
 					</section>				
 				</div>
 
 				<div class="row">
 					<section class="6u">
-						<a href="#" class="image full"><img src="images/pic03.jpg" alt=""></a>
+						<a class="image full"><img src="images/pic03.jpg"></a>
+						<!-- ChecaDatosMx -->
 						<header>
-							<h2>Mauris vulputate dolor</h2>
+							<h2>ChecaDatosMx</h2>
 						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-					</section>				
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.checadatos.com" target="_blank">ChecaDatosMx</a></td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Página Web. Sitio de <a href="https://es.wikipedia.org/wiki/Verificaci%C3%B3n_de_hechos" style="text-decoration: none; color:#777777"><em>fact checking</em></a> y micrositios relacionados con Gobierno y Datos Abiertos.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Wordpress</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">Actualidad</td>
+							</tr>
+						</table>
+						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
+					</section>
 					<section class="6u">
-						<a href="#" class="image full"><img src="images/pic04.jpg" alt=""></a>
+						<a class="image full"><img src="images/pic04.jpg"></a>
+						<!-- ChecaDatosMx Móvil -->
 						<header>
-							<h2>Mauris vulputate dolor</h2>
+							<h2>ChecaDatosMx Móvil</h2>
 						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-					</section>				
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.checadatos.com" target="_blank">ChecaDatosMx</a></td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Aplicación Móvil. Aplicación de <a href="https://es.wikipedia.org/wiki/Verificaci%C3%B3n_de_hechos" style="text-decoration: none; color:#777777"><em>fact checking</em></a> y micrositios relacionados con Gobierno y Datos Abiertos.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-botom: 5px;">Android</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">Actualidad</td>
+							</tr>
+						</table>
+						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
+					</section>								
 				</div>
 			
 			</div>
