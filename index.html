@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Linear by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 	<head>
 		<title>Comfred | Desarrollo de Software</title>
@@ -23,16 +18,30 @@
 		</noscript>
 		<link rel="icon" href="images/comfred.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="images/comfred.ico" type="image/x-icon"/>
-		<!-- Función. Para los sitios que continúan en desarrollo y su página web o applicación móvil aún no se ha publicado. -->
+		<!-- Función. Para los sitios que continúan en desarrollo y su página web o aplicación móvil aún no se ha publicado. -->
 		<script>
 			function enDesarrollo(){
+				alert("El recurso se encuentra bajo desarrollo.");
+			}
+		</script>
+
+		<!-- Función. Para los sitios que continúan en desarrollo y su página web o aplicación móvil aún no se ha publicado. -->
+		<script>
+			function enEspera(){
 				alert("El recurso aún no ha sido publicado por la organización.");
+			}
+		</script>
+
+		<!-- Función. Para obtener la dirección de correo electrónico. -->
+		<script>
+			function obtenerMail(){
+				alert("Envíanos un mail a: iniguez.devt@gmail.com. ¡Saludos!");
 			}
 		</script>
 	</head>
 	<body class="homepage">
 
-	<!-- Header -->
+	<!-- __________________________________________________ COMFRED __________________________________________________  -->
 	<section id="comfred">
 		<div id="header">
 			<div id="nav-wrapper"> 
@@ -42,7 +51,7 @@
 						<li class="active"><a href="#comfred">Inicio</a></li>
 						<li><a href="#servicios">Servicios</a></li>
 						<li><a href="#portafolio">Portafolio</a></li>
-						<li><a href="#acerca-de">Contacto</a></li>
+						<li><a href="#contacto">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -57,52 +66,162 @@
 			</div>
 		</div>
 
-	<!-- Featured -->
+	<!-- __________________________________________________ SERVICIOS __________________________________________________  -->
 	<section id="servicios">
 		<div id="featured">
 			<div class="container">
 				<header>
-					<h2 style="color:red; text-decorator: underline;">¡Sitio en desarrollo!</h2>
+					<h2>Nuestro compromiso</h2>
 				</header>
 				<p>Colaborar en instituciones y programas donde se requiera el uso de tecnologías, para poder poner en práctica la experiencia y conocimientos adquiridos, junto con la constante promoción de tecnologías de código abierto, participación social, innovación y uso apropiado de los recursos naturales. Lo anterior para dar solución a problemas de carácter educativo y social.</p>
 				<hr />
 				<div class="row">
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-briefcase"></span></span>
-						<h3>Maecenas luctus lectus</h3>
-						<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-						<a href="#" class="button button-style1">Read More</a>
+						<h3>Software</h3>
+						<p>En Comfred desarrollamos soluciones tecnológicas a la medida de tu empresa, organización educativa o social.</p>
 					</section>
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-terminal"></span></span>
-						<h3>Maecenas luctus lectus</h3>
-						<p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec magna.</p>
-						<a href="#" class="button button-style1">Read More</a>
+						<h3>Tecnología</h3>
+						<p>Hacemos uso de las herramientas tecnológicas más adecuadas para que la solución a tu problema sea exitosa, brindándote seguridad y disponibilidad en su uso.</p>
 					</section>
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-globe"></span></span>
-						<h3>Maecenas luctus lectus</h3>
-						<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-						<a href="#worldwide" class="button button-style1">Read More</a>
+						<a href="https://es.wikipedia.org/wiki/Superpoblaci%C3%B3n" style="text-decoration: none;"><h3>Crecimiento</h3></a>
+						<p>Diseñamos las soluciones de manera que permitan un crecimiento profesional para tu organización y sean adaptables a las tendencias de tu entorno.</p>
 					</section>
 
 				</div>
 			</div>
 		</div>
 
-	<!-- Main -->
+	<!-- __________________________________________________ PORTAFOLIO __________________________________________________  -->
 	<section id="portafolio">
 		<div id="main">
 			<div id="content" class="container">
 				<header>
 					<h2 style="font-size: 3em; padding-bottom: 40px;">Nuestros más recientes proyectos</h2>
 				</header>
+
 				<div class="row">
+					<!-- ChecaDatosMx -->
 					<section class="6u">
-						<a class="image full"><img src="images/pic01.jpg"></a>
-						<!-- CQH Electoral Colectivo -->
+						<a class="image full"><img src="images/projects/cdmx.png"></a>
 						<header>
-							<h2>CHQ Electoral Colectivo</h2>
+							<h2>ChecaDatosMx</h2>
+						</header>
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.checadatos.com" target="_blank">ChecaDatosMx</a></td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Página web. Sitio de <a href="https://es.wikipedia.org/wiki/Verificaci%C3%B3n_de_hechos" style="text-decoration: none; color:#777777"><em>fact checking</em></a> y micrositios relacionados con transparencia, acceso a la información y gobierno abierto.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Wordpress</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">En desarrollo</td>
+							</tr>
+						</table>
+						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
+					</section>
+
+					<!-- ChecaDatosMx Móvil -->
+					<section class="6u">
+						<a class="image full"><img src="images/projects/cdmxmovil.png"></a>
+						<header>
+							<h2>ChecaDatosMx Móvil</h2>
+						</header>
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.checadatos.com" target="_blank">ChecaDatosMx</a></td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Aplicación Móvil. Versión para teléfonos inteligentes de <a href="http://www.checadatos.com" target="_blank">ChecaDatosMx</a>, que busca un mayor acercamiento y mejor entrega de los informes.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-botom: 5px;">Android</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">En desarrollo</td>
+							</tr>
+						</table>
+						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
+					</section>				
+				</div>
+
+				<div class="row">
+					<!-- CIMAT CERT -->
+					<section class="6u">
+						<a class="image full"><img src="images/projects/cimatcert.png"></a>
+						<header>
+							<h2>CIMAT CERT</h2>
+						</header>
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.ingsoft.mx/" target="_blank">CIMAT</a>: Centro de Investigación en Matemáticas, Unidad Zacatecas</td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Prototipo. Sitio relacionado con seguridad informática y apoyo a las actividades de un <a href="https://es.wikipedia.org/wiki/Equipo_de_Respuesta_ante_Emergencias_Inform%C3%A1ticas" style="text-decoration: none; color:#777777;"><em>CERT</em></a>.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Wordpress</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">Junio, 2015</td>
+							</tr>
+						</table>
+						<a class="button button-style1" onclick="enEspera()">Ver sitio</a>
+					</section>	
+
+					<!-- SiCoBe -->
+					<section class="6u">
+						<a class="image full"><img src="images/projects/sicobe.png"></a>
+						<header>
+							<h2>SiCoBe</h2>
+						</header>
+						<table style="text-align:left">
+							<tr>
+								<td>Organización</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://sezac.org.mx/" target="_blank">SEZAC</a>: Secretaría de Economía de Zacatecas</td>
+							</tr>
+							<tr>
+								<td>Descripción</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Prototipo. Sitio relacionado con la mejora en la gestión de los recursos y apoyos brindados para la ciudadanía.</td>
+							</tr>
+							<tr>
+								<td>Tecnología</td>
+								<td style="padding-left: 10px; padding-botom: 5px;">PHP, HTML, CSS</td>
+							</tr>
+							<tr>
+								<td>Fecha</td>
+								<td style="padding-left: 10px;">Junio 2015</td>
+							</tr>
+						</table>
+						<a class="button button-style1" onclick="enEspera()">Ver sitio</a>
+					</section>								
+				</div>
+
+				<div class="row">
+					<!-- CQH Colectivo -->
+					<section class="6u">
+						<a class="image full"><img src="images/projects/chqcolectivo.png"></a>
+						<header>
+							<h2>CHQ Colectivo</h2>
 						</header>
 						<table style="text-align:left">
 							<tr>
@@ -122,22 +241,23 @@
 								<td style="padding-left: 10px;">Noviembre, 2014</td>
 							</tr>
 						</table>
-						<a href="http://www.chqelectoral.com" target="_blank" class="button button-style1">Ver sitio</a>
+						<a href="http://www.chequeado.com/colectivo" target="_blank" class="button button-style1">Ver sitio</a>
 					</section>	
+
+					<!-- Glóbulo -->
 					<section class="6u">
-						<a class="image full"><img src="images/projects/cimatcert.png"></a>
-						<!-- CIMAT CERT -->
+						<a class="image full"><img src="images/projects/globulo.png"></a>
 						<header>
-							<h2>CIMAT CERT</h2>
+							<h2>Glóbulo</h2>
 						</header>
 						<table style="text-align:left">
 							<tr>
 								<td>Organización</td>
-								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.ingsoft.mx/" target="_blank">CIMAT</a>: Centro de Investigación en Matemáticas, Unidad Zacatecas</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.uv.mx/universo/579/reportaje/reportaje.html" targer="_blank">Five5</a></td>
 							</tr>
 							<tr>
 								<td>Descripción</td>
-								<td style="padding-left: 10px; padding-bottom: 5px;">Prototipo. Sitio relacionado con seguridad informática y apoyo a las actividades de un <a href="https://es.wikipedia.org/wiki/Equipo_de_Respuesta_ante_Emergencias_Inform%C3%A1ticas" style="text-decoration: none; color:#777777;">CERT</a>.</td>
+								<td style="padding-left: 10px; padding-bottom: 5px;">Aplicación móvil. Plataforma para teléfonos inteligentes que pretende incentivar a la población a la <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5275587&fecha=26/10/2012"><em>donación altruista de sangre</em></a>.</td>
 							</tr>
 							<tr>
 								<td>Tecnología</td>
@@ -148,70 +268,15 @@
 								<td style="padding-left: 10px;">Junio, 2015</td>
 							</tr>
 						</table>
-						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
+						<a class="button button-style1" href="https://github.com/HackatonFive5/SaludXalapa/blob/master/README.md" target="_blank">Ver sitio</a>
 					</section>				
-				</div>
-
-				<div class="row">
-					<section class="6u">
-						<a class="image full"><img src="images/pic03.jpg"></a>
-						<!-- ChecaDatosMx -->
-						<header>
-							<h2>ChecaDatosMx</h2>
-						</header>
-						<table style="text-align:left">
-							<tr>
-								<td>Organización</td>
-								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.checadatos.com" target="_blank">ChecaDatosMx</a></td>
-							</tr>
-							<tr>
-								<td>Descripción</td>
-								<td style="padding-left: 10px; padding-bottom: 5px;">Página Web. Sitio de <a href="https://es.wikipedia.org/wiki/Verificaci%C3%B3n_de_hechos" style="text-decoration: none; color:#777777"><em>fact checking</em></a> y micrositios relacionados con Gobierno y Datos Abiertos.</td>
-							</tr>
-							<tr>
-								<td>Tecnología</td>
-								<td style="padding-left: 10px; padding-bottom: 5px;">Wordpress</td>
-							</tr>
-							<tr>
-								<td>Fecha</td>
-								<td style="padding-left: 10px;">Actualidad</td>
-							</tr>
-						</table>
-						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
-					</section>
-					<section class="6u">
-						<a class="image full"><img src="images/pic04.jpg"></a>
-						<!-- ChecaDatosMx Móvil -->
-						<header>
-							<h2>ChecaDatosMx Móvil</h2>
-						</header>
-						<table style="text-align:left">
-							<tr>
-								<td>Organización</td>
-								<td style="padding-left: 10px; padding-bottom: 5px;"><a href="http://www.checadatos.com" target="_blank">ChecaDatosMx</a></td>
-							</tr>
-							<tr>
-								<td>Descripción</td>
-								<td style="padding-left: 10px; padding-bottom: 5px;">Aplicación Móvil. Aplicación de <a href="https://es.wikipedia.org/wiki/Verificaci%C3%B3n_de_hechos" style="text-decoration: none; color:#777777"><em>fact checking</em></a> y micrositios relacionados con Gobierno y Datos Abiertos.</td>
-							</tr>
-							<tr>
-								<td>Tecnología</td>
-								<td style="padding-left: 10px; padding-botom: 5px;">Android</td>
-							</tr>
-							<tr>
-								<td>Fecha</td>
-								<td style="padding-left: 10px;">Actualidad</td>
-							</tr>
-						</table>
-						<a class="button button-style1" onclick="enDesarrollo()">Ver sitio</a>
-					</section>								
 				</div>
 			
 			</div>
 		</div>
 
-	<!-- Tweet -->
-	<section id="acerca-de">
+	<!-- __________________________________________________ CONTACTO __________________________________________________  -->
+	<section id="contacto">
 		<div id="tweet">
 			<div class="container">
 				<section>
@@ -229,6 +294,7 @@
 						<span class="byline">Ponte en contacto por medio de nuestras redes</span>
 					</header>
 					<ul class="contact">
+						<li><a onclick="obtenerMail()" target="_blank" class="fa fa-laptop"><span>Correo electrónico</span></a></li>
 						<li><a href="https://www.twitter.com/freddyiniguez" target="_blank" class="fa fa-twitter"><span>Twitter</span></a></li>
 						<li class="active"><a href="https://www.facebook.com/FreddyEnneco" target="_blank" class="fa fa-facebook"><span>Facebook</span></a></li>
 						<li><a href="https://www.linkedin.com/in/freddyiniguez" target="_blank" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
